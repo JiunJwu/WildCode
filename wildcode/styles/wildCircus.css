@@ -1,15 +1,20 @@
 /* In order to validate your CSS code, click on the arrow at the top right of this window. Don't forget, you can have a look here : https://blog.codepen.io/2017/10/11/analyze-css-now-using-stylelint/ 
  */
-
+h1,h2,h3,nav{	
+	font-family:"Amatic SC";
+}
 nav{
-	background-color: #98fb98; 
 	list-style-type: none;
-	text-align: center;
-	margin: 0;
-	padding: 0;
+
+}
+header{
 	position: fixed;
 	top: 0;
 	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #98fb98; 
+	text-align: center;
 }
 nav ul li {
   display: inline-block;
@@ -21,7 +26,10 @@ nav ul li:hover {
   font-weight:bold;
   cursor: pointer; 
 }
-
+.space{
+	
+	height:100px;
+}
 .ulContect{
   list-style-type: none;
   text-align: center;
@@ -46,8 +54,13 @@ nav ul li:hover {
 	padding: 10px 0;
 	height: 10px;
 }
+table{
+	font-family:"Arial";
+}
+p{
+	font-family:"Times New Roman";
+}
 thead tr th {
-  font-family: Lato-Bold;
   font-size: 18px;
   color: #fff;
   line-height: 1.4;
@@ -56,7 +69,6 @@ thead tr th {
   background-color: #6c7ae0;
 }
 tbody tr td {
-  font-family: Lato-Regular;
   font-size: 15px;
   color: #808080;
   line-height: 1.4;
@@ -73,24 +85,24 @@ table {
 	box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
 }
 .column1 {
-  width: 33%;
+  width: 20%;
   padding-left: 40px;
 }
 
 .column2 {
-  width: 13%;
+  width: 15%;
 }
 
 .column3 {
-  width: 22%;
+  width: 25%;
 }
 
 .column4 {
-  width: 19%;
+  width: 25%;
 }
 
 .column5 {
-  width: 13%;
+  width: 15%;
 }
 
 th, td {
@@ -99,7 +111,7 @@ th, td {
 }
 
 .contactBOX{
-	background-color: #FC876c;
+	background-color: #6c876c;
 	padding:20px;
 	border-radius: 15px;
 	box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
@@ -110,14 +122,23 @@ th, td {
 	margin: 10px;
 	width:500px;
 }
-input{
-
-  background-color : #d1d1d1; 
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
 
 #logo{
   background-image:url("../images/imglogo.jpg");
-　background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   width:400px;
   height:400px;
@@ -163,7 +184,6 @@ input{
 	  }
 	}
 	a{
-		color:green;
-		
+		color:green;		
 	}
 /* Your CSS code here */

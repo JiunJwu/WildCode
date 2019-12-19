@@ -1,9 +1,11 @@
 <!-- 
 In order to validate your HTML code, click on the arrow at the top right of this window. If you have some problems with validation, you can have a look here  : https://blog.codepen.io/2017/10/11/analyze-css-now-using-stylelint/ 
 -->
+<!DOCTYPE html>
 
 <head>
     <meta charset="UTF-8">
+	<link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
     <link rel="stylesheet" href="./styles/wildCircus.CSS" type="text/css"/>
 	<script type="text/javascript"  src="./scripts/wildcode.js"></script>
     <title>Wild Circus</title>
@@ -12,7 +14,7 @@ In order to validate your HTML code, click on the arrow at the top right of this
 <body>
     <header>
       <h1>Wild Circus</h1>
-      <nav>
+      <nav>	
         <ul>
             <!-- TODO: every menu link drive us to the specific section -->
             <li onclick="moveto(1)"><a>Performances</a></li>
@@ -24,6 +26,8 @@ In order to validate your HTML code, click on the arrow at the top right of this
     </header>
 
     <section id="content1">
+	  <div class="space"></div>
+
       <h2>Performances</h2>
       <!-- TODO: With your CSS, put the three performances here  ("lough", "dream, "marvel at") on the same line, without the generated dot. Becareful, only use the CSS in order to align everything, you must not remove the <li> tags.-->
       <ul class=ulContect>
@@ -121,18 +125,22 @@ In order to validate your HTML code, click on the arrow at the top right of this
       <!-- TODO: Create a contact form with the inputs for the email and message, add the send button at the end. Don't forget to add the labels on the inputs.
             This form doesn't need to be functional, just create the layout. 
       -->
-		<div class="contactBOX">
+		<form class="contactBOX">
+			<label for="nameText"></label>
 			<input class="textbox" id="nameText" type="text" name="Name" placeholder="name" required> 
 			<br>
+			<label for="emailText"></label>
 			<input class="textbox" id="emailText" type="email" name="Email" placeholder="Email" required>
 			<br>	
+			<label for="subText"></label>
 			<input class="textbox" id="subText" type="text" name="Subject" aria-invalid="false" placeholder="subject" required>
-			<br>						
-			<textarea  class="textbox" id="bodyText" name="your-message" rows="10"  aria-required="true" aria-invalid="false" placeholder="Your Message" required></textarea>
+			<br>	
+			<label for="bodyText"></label>			
+			<textarea  class="textbox" id="bodyText" name="your-message" rows="10"  aria-invalid="false" placeholder="Your Message" required></textarea>
 			<br>					
-			<input type="button" value="Submit" onclick="submitHandler();">
+			<input type="submit" value="Submit" onclick="submitHandler();">
 			<a id="mailTo"></a>
-		</div>
+		</form>
 
     </section>
 
