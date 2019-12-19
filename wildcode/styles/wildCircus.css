@@ -1,0 +1,169 @@
+/* In order to validate your CSS code, click on the arrow at the top right of this window. Don't forget, you can have a look here : https://blog.codepen.io/2017/10/11/analyze-css-now-using-stylelint/ 
+ */
+
+nav{
+	background-color: #98fb98; 
+	list-style-type: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+nav ul li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 0px 40px 0px 40px   ;
+}
+
+nav ul li:hover {
+  font-weight:bold;
+  cursor: pointer; 
+}
+
+.ulContect{
+  list-style-type: none;
+  text-align: center;
+}
+
+.ulContect li {
+  display: inline-block;
+  vertical-align: text-top;
+  font-size: 20px;
+  background-color: #f8f6f5;
+  margin-left:10px;
+  margin-right:10px
+}
+
+.box{
+  width:300px;
+  padding: 10px;
+  margin: 20px;
+  height:300px;
+}
+.boxtitle{
+	padding: 10px 0;
+	height: 10px;
+}
+thead tr th {
+  font-family: Lato-Bold;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.4;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  background-color: #6c7ae0;
+}
+tbody tr td {
+  font-family: Lato-Regular;
+  font-size: 15px;
+  color: #808080;
+  line-height: 1.4;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+tbody tr:nth-child(even) {
+  background-color: #f8f6ff;
+}
+table {
+	width: 100%;
+	border-radius: 15px;
+	overflow: hidden;
+	box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.column1 {
+  width: 33%;
+  padding-left: 40px;
+}
+
+.column2 {
+  width: 13%;
+}
+
+.column3 {
+  width: 22%;
+}
+
+.column4 {
+  width: 19%;
+}
+
+.column5 {
+  width: 13%;
+}
+
+th, td {
+  font-weight: unset;
+  padding-right: 10px;
+}
+
+.contactBOX{
+	background-color: #FC876c;
+	padding:20px;
+	border-radius: 15px;
+	box-shadow: 0 0px 40px 0px rgba(0, 0, 0, 0.15);
+	text-align: center;
+}
+.textbox{
+	border-radius: 5px;
+	margin: 10px;
+	width:500px;
+}
+input{
+
+  background-color : #d1d1d1; 
+}
+
+#logo{
+  background-image:url("../images/imglogo.jpg");
+　background-repeat: no-repeat;
+  background-size: cover;
+  width:400px;
+  height:400px;
+	
+}
+#map{
+  width:400px;
+  height:400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#gg div{
+	display: inline-block;
+	vertical-align: text-top;
+}
+#gg {
+	text-align: center;
+}
+
+#animation:hover{
+  animation-play-state:paused;
+}
+#animation{
+	  width:50px; height:50px; 
+	  text-align:center;
+	  position: relative; left:0px; top:0px;
+	  animation-name: rightMove, bottomMove;
+	  animation-duration: 2.5s;
+	  animation-iteration-count: infinite;
+	}
+
+	@keyframes rightMove{
+	   50% {
+	    animation-timing-function: cubic-bezier(0.3, 0.27, 0.07, 1.64);
+	    left: 300px;
+	  }
+	}
+
+	@keyframes bottomMove{
+	  50% {
+	    animation-timing-function: cubic-bezier(0.21, 1.36, 0.53, -0.69);
+	    top: 350px;
+	  }
+	}
+	a{
+		color:green;
+		
+	}
+/* Your CSS code here */
